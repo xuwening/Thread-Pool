@@ -1,38 +1,19 @@
+# 线程池
 
+## 特点
 
-1. Source code directory structure
+* 纯净实现，不依赖第三方库
+* 跨平台，支持windows、linux平台
+* 线程池中线程数可自动伸缩
 
-.
-|-- Makefile
-|-- build
-|   |-- deps
-|   `-- obj
-|-- double_list.c
-|-- double_list.h
-|-- lib
-|   |-- libthread_pool.a
-|   `-- libthread_pool.so
-|-- main.c
-|-- proc
-|
-|-- seq_queue.c
-|-- seq_queue.h
-|-- syn_primitive.c
-|-- syn_primitive.h
-|-- thread_pool.c
-|-- thread_pool.h
-|-- typedefs.h
-`-- win32_prj
-	`-- thread_pool
+不是线程池的最优实现，用户学习和研究，或用于一般项目够用了。
 
+## 编译
 
-2. How do compile source code ?
+make clean
+make
 
-   1. make clean 
-   2. make 
-   
+## 运行
 
-3. Bug repair
-
-	[20120601 first build]
+./thread_pool
 
